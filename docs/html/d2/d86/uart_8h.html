@@ -1,0 +1,1054 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Mongol Tori 2.0: uart.h File Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mongol Tori 2.0
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d2/d86/uart_8h.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">uart.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;stm32f405xx.h&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for uart.h:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+</div>
+<p><a href="../../d2/d86/uart_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:UART_5FInit_5Ft" id="r_UART_5FInit_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html">UART_Init_t</a></td></tr>
+<tr class="memitem:UART_5FHandle_5Ft" id="r_UART_5FHandle_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad54f095a1073bcd81787d13fc268bd62" id="r_ad54f095a1073bcd81787d13fc268bd62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54f095a1073bcd81787d13fc268bd62">UART_MODE_TX</a>&#160;&#160;&#160;(1U &lt;&lt; 3)</td></tr>
+<tr class="memitem:a6cdc4e35cd90d15a964994499475e7d7" id="r_a6cdc4e35cd90d15a964994499475e7d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cdc4e35cd90d15a964994499475e7d7">UART_MODE_RX</a>&#160;&#160;&#160;(1U &lt;&lt; 2)</td></tr>
+<tr class="memitem:ab47c162935901e89322e2ce6700b6744" id="r_ab47c162935901e89322e2ce6700b6744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab47c162935901e89322e2ce6700b6744">UART_MODE_TX_RX</a>&#160;&#160;&#160;(<a class="el" href="#ad54f095a1073bcd81787d13fc268bd62">UART_MODE_TX</a> | <a class="el" href="#a6cdc4e35cd90d15a964994499475e7d7">UART_MODE_RX</a>)</td></tr>
+<tr class="memitem:af0c44b74f2cd26b50262948d63e808dc" id="r_af0c44b74f2cd26b50262948d63e808dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c44b74f2cd26b50262948d63e808dc">UART_BAUDRATE_1200</a>&#160;&#160;&#160;1200U</td></tr>
+<tr class="memitem:a61b7c6fd00cc5583e8dcdb735d2a9e84" id="r_a61b7c6fd00cc5583e8dcdb735d2a9e84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b7c6fd00cc5583e8dcdb735d2a9e84">UART_BAUDRATE_2400</a>&#160;&#160;&#160;2400U</td></tr>
+<tr class="memitem:ab94325ab3427db2f619491a4eaf54bf3" id="r_ab94325ab3427db2f619491a4eaf54bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab94325ab3427db2f619491a4eaf54bf3">UART_BAUDRATE_4800</a>&#160;&#160;&#160;4800U</td></tr>
+<tr class="memitem:a4549807ebe0dd970e68e283921e80bb3" id="r_a4549807ebe0dd970e68e283921e80bb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4549807ebe0dd970e68e283921e80bb3">UART_BAUDRATE_9600</a>&#160;&#160;&#160;9600U</td></tr>
+<tr class="memitem:a61cfb7c7f0b8f41e5861a4cbd6b6ba64" id="r_a61cfb7c7f0b8f41e5861a4cbd6b6ba64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61cfb7c7f0b8f41e5861a4cbd6b6ba64">UART_BAUDRATE_19200</a>&#160;&#160;&#160;19200U</td></tr>
+<tr class="memitem:ae2f23e760d5a0c3f83bc6b7ffc521c7d" id="r_ae2f23e760d5a0c3f83bc6b7ffc521c7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f23e760d5a0c3f83bc6b7ffc521c7d">UART_BAUDRATE_38400</a>&#160;&#160;&#160;38400U</td></tr>
+<tr class="memitem:a1a68714374485a10c6f6170c64025447" id="r_a1a68714374485a10c6f6170c64025447"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a68714374485a10c6f6170c64025447">UART_BAUDRATE_57600</a>&#160;&#160;&#160;57600U</td></tr>
+<tr class="memitem:a7ba5033e1e1547d07d7683d0542c1f4a" id="r_a7ba5033e1e1547d07d7683d0542c1f4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ba5033e1e1547d07d7683d0542c1f4a">UART_BAUDRATE_115200</a>&#160;&#160;&#160;115200U</td></tr>
+<tr class="memitem:a2c3b5462bda445df5ca24a1c756c9e76" id="r_a2c3b5462bda445df5ca24a1c756c9e76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c3b5462bda445df5ca24a1c756c9e76">UART_BAUDRATE_230400</a>&#160;&#160;&#160;230400U</td></tr>
+<tr class="memitem:ad6bfe17a5c0f2881d5d524e4d7d85051" id="r_ad6bfe17a5c0f2881d5d524e4d7d85051"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6bfe17a5c0f2881d5d524e4d7d85051">UART_BAUDRATE_460800</a>&#160;&#160;&#160;460800U</td></tr>
+<tr class="memitem:a04adc5a61ac8bca86e1ba1524f9ff7a5" id="r_a04adc5a61ac8bca86e1ba1524f9ff7a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04adc5a61ac8bca86e1ba1524f9ff7a5">UART_BAUDRATE_921600</a>&#160;&#160;&#160;921600U</td></tr>
+<tr class="memitem:a4033ae53a1043a74d5d8dd4af5532294" id="r_a4033ae53a1043a74d5d8dd4af5532294"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4033ae53a1043a74d5d8dd4af5532294">UART_BAUDRATE_1000000</a>&#160;&#160;&#160;1000000U</td></tr>
+<tr class="memitem:a270dea6e1a92dd83fe58802450bdd60c" id="r_a270dea6e1a92dd83fe58802450bdd60c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a>&#160;&#160;&#160;(0U &lt;&lt; 9)</td></tr>
+<tr class="memitem:a063b14ac42ef9e8f4246c17a586b14eb" id="r_a063b14ac42ef9e8f4246c17a586b14eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a063b14ac42ef9e8f4246c17a586b14eb">UART_PARITY_EVEN</a>&#160;&#160;&#160;(1U &lt;&lt; 10)</td></tr>
+<tr class="memitem:a229615e64964f68f7a856ea6ffea359e" id="r_a229615e64964f68f7a856ea6ffea359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a229615e64964f68f7a856ea6ffea359e">UART_PARITY_ODD</a>&#160;&#160;&#160;((1U &lt;&lt; 10) | (1U &lt;&lt; 9))</td></tr>
+<tr class="memitem:a304a79f0a5ea9e9a62d5cda6be625a6a" id="r_a304a79f0a5ea9e9a62d5cda6be625a6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a304a79f0a5ea9e9a62d5cda6be625a6a">UART_WORD_LEN_8BIT</a>&#160;&#160;&#160;(0U &lt;&lt; 12)</td></tr>
+<tr class="memitem:a7bd369a048b3426052bcd36c7582c3d6" id="r_a7bd369a048b3426052bcd36c7582c3d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bd369a048b3426052bcd36c7582c3d6">UART_WORD_LEN_9BIT</a>&#160;&#160;&#160;(1U &lt;&lt; 12)</td></tr>
+<tr class="memitem:ad3d0d8393b15f52c3df1367f4e79b38f" id="r_ad3d0d8393b15f52c3df1367f4e79b38f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3d0d8393b15f52c3df1367f4e79b38f">UART_STOPBITS_1BIT</a>&#160;&#160;&#160;(0U &lt;&lt; 12)</td></tr>
+<tr class="memitem:a7250c88d04ae32707acb2412debee560" id="r_a7250c88d04ae32707acb2412debee560"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7250c88d04ae32707acb2412debee560">UART_STOPBITS_0_5BIT</a>&#160;&#160;&#160;(1U &lt;&lt; 12)</td></tr>
+<tr class="memitem:a12bf46fa2ab2c56f383a1f3657acbfc0" id="r_a12bf46fa2ab2c56f383a1f3657acbfc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12bf46fa2ab2c56f383a1f3657acbfc0">UART_STOPBITS_2BIT</a>&#160;&#160;&#160;(2U &lt;&lt; 12)</td></tr>
+<tr class="memitem:a3e5bcad4ff9878cb5435ac5e72cd0aa6" id="r_a3e5bcad4ff9878cb5435ac5e72cd0aa6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e5bcad4ff9878cb5435ac5e72cd0aa6">UART_STOPBITS_1_5BIT</a>&#160;&#160;&#160;(3U &lt;&lt; 12)</td></tr>
+<tr class="memitem:a9ed5881f19353f5763f5eefdab167733" id="r_a9ed5881f19353f5763f5eefdab167733"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memitem:a53617443361832f9bd51846c7595a81c" id="r_a53617443361832f9bd51846c7595a81c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53617443361832f9bd51846c7595a81c">UART_STATE_BUSY_TX</a>&#160;&#160;&#160;1U</td></tr>
+<tr class="memitem:ab2dd365121cd8ac2f21184e3607b1ccf" id="r_ab2dd365121cd8ac2f21184e3607b1ccf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2dd365121cd8ac2f21184e3607b1ccf">UART_STATE_BUSY_RX</a>&#160;&#160;&#160;2U</td></tr>
+<tr class="memitem:a0358dd7c09d1875160a0853de64e348b" id="r_a0358dd7c09d1875160a0853de64e348b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0358dd7c09d1875160a0853de64e348b">UART_HANDLE_STRUCT_DEFAULT</a>(pUSART,  baud)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a723ce2798f8cc48b1766319dccef94fe" id="r_a723ce2798f8cc48b1766319dccef94fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a> { <a class="el" href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a> = -1
+, <a class="el" href="#a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07">UART_OK</a> = 0
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a61a37e10fa9213b30b3b9ea56d4a6a52" id="r_a61a37e10fa9213b30b3b9ea56d4a6a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle)</td></tr>
+<tr class="memitem:a4e1bdbde8cd61461520fdaa2a7f85e1b" id="r_a4e1bdbde8cd61461520fdaa2a7f85e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1bdbde8cd61461520fdaa2a7f85e1b">UART_Transmit</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+<tr class="memitem:ab716d8fc02dc2e22e4b99f4893e2b732" id="r_ab716d8fc02dc2e22e4b99f4893e2b732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab716d8fc02dc2e22e4b99f4893e2b732">UART_TransmitIT</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+<tr class="memitem:acb6786417c75424ac8029d4f521de3cf" id="r_acb6786417c75424ac8029d4f521de3cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+<tr class="memitem:a6164461f2a4ee7fa313aab49e2364198" id="r_a6164461f2a4ee7fa313aab49e2364198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6164461f2a4ee7fa313aab49e2364198">UART_Receive</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+<tr class="memitem:a030857793764d216571fcc7c0fbc70ee" id="r_a030857793764d216571fcc7c0fbc70ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a030857793764d216571fcc7c0fbc70ee">UART_ReceiveIT</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+<tr class="memitem:a603d71c277d201f0f958dcbf883616eb" id="r_a603d71c277d201f0f958dcbf883616eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA</a> (<a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *pHandle, uint8_t *pData, uint32_t Size)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a4033ae53a1043a74d5d8dd4af5532294" name="a4033ae53a1043a74d5d8dd4af5532294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4033ae53a1043a74d5d8dd4af5532294">&#9670;&#160;</a></span>UART_BAUDRATE_1000000</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_1000000&#160;&#160;&#160;1000000U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>.</p>
+
+</div>
+</div>
+<a id="a7ba5033e1e1547d07d7683d0542c1f4a" name="a7ba5033e1e1547d07d7683d0542c1f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba5033e1e1547d07d7683d0542c1f4a">&#9670;&#160;</a></span>UART_BAUDRATE_115200</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_115200&#160;&#160;&#160;115200U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0c44b74f2cd26b50262948d63e808dc" name="af0c44b74f2cd26b50262948d63e808dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c44b74f2cd26b50262948d63e808dc">&#9670;&#160;</a></span>UART_BAUDRATE_1200</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_1200&#160;&#160;&#160;1200U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>.</p>
+
+</div>
+</div>
+<a id="a61cfb7c7f0b8f41e5861a4cbd6b6ba64" name="a61cfb7c7f0b8f41e5861a4cbd6b6ba64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cfb7c7f0b8f41e5861a4cbd6b6ba64">&#9670;&#160;</a></span>UART_BAUDRATE_19200</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_19200&#160;&#160;&#160;19200U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c3b5462bda445df5ca24a1c756c9e76" name="a2c3b5462bda445df5ca24a1c756c9e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3b5462bda445df5ca24a1c756c9e76">&#9670;&#160;</a></span>UART_BAUDRATE_230400</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_230400&#160;&#160;&#160;230400U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61b7c6fd00cc5583e8dcdb735d2a9e84" name="a61b7c6fd00cc5583e8dcdb735d2a9e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b7c6fd00cc5583e8dcdb735d2a9e84">&#9670;&#160;</a></span>UART_BAUDRATE_2400</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_2400&#160;&#160;&#160;2400U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2f23e760d5a0c3f83bc6b7ffc521c7d" name="ae2f23e760d5a0c3f83bc6b7ffc521c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f23e760d5a0c3f83bc6b7ffc521c7d">&#9670;&#160;</a></span>UART_BAUDRATE_38400</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_38400&#160;&#160;&#160;38400U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6bfe17a5c0f2881d5d524e4d7d85051" name="ad6bfe17a5c0f2881d5d524e4d7d85051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bfe17a5c0f2881d5d524e4d7d85051">&#9670;&#160;</a></span>UART_BAUDRATE_460800</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_460800&#160;&#160;&#160;460800U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab94325ab3427db2f619491a4eaf54bf3" name="ab94325ab3427db2f619491a4eaf54bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94325ab3427db2f619491a4eaf54bf3">&#9670;&#160;</a></span>UART_BAUDRATE_4800</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_4800&#160;&#160;&#160;4800U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a68714374485a10c6f6170c64025447" name="a1a68714374485a10c6f6170c64025447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a68714374485a10c6f6170c64025447">&#9670;&#160;</a></span>UART_BAUDRATE_57600</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_57600&#160;&#160;&#160;57600U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04adc5a61ac8bca86e1ba1524f9ff7a5" name="a04adc5a61ac8bca86e1ba1524f9ff7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04adc5a61ac8bca86e1ba1524f9ff7a5">&#9670;&#160;</a></span>UART_BAUDRATE_921600</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_921600&#160;&#160;&#160;921600U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4549807ebe0dd970e68e283921e80bb3" name="a4549807ebe0dd970e68e283921e80bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4549807ebe0dd970e68e283921e80bb3">&#9670;&#160;</a></span>UART_BAUDRATE_9600</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_BAUDRATE_9600&#160;&#160;&#160;9600U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0358dd7c09d1875160a0853de64e348b" name="a0358dd7c09d1875160a0853de64e348b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0358dd7c09d1875160a0853de64e348b">&#9670;&#160;</a></span>UART_HANDLE_STRUCT_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_HANDLE_STRUCT_DEFAULT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pUSART</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>baud</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_struct" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a>){                             \</div>
+<div class="line">        .Init = {                                \</div>
+<div class="line">            .pUSARTx = (pUSART),                 \</div>
+<div class="line">            .BaudRate = (baud),                  \</div>
+<div class="line">            .WordLen = <a class="code hl_define" href="#a304a79f0a5ea9e9a62d5cda6be625a6a">UART_WORD_LEN_8BIT</a>,       \</div>
+<div class="line">            .ParityConfig = <a class="code hl_define" href="#a270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a>,    \</div>
+<div class="line">            .Direction = <a class="code hl_define" href="#ab47c162935901e89322e2ce6700b6744">UART_MODE_TX_RX</a>,        \</div>
+<div class="line">            .StopBits = <a class="code hl_define" href="#ad3d0d8393b15f52c3df1367f4e79b38f">UART_STOPBITS_1BIT</a>},     \</div>
+<div class="line">        .pTxDMAStream = NULL,                    \</div>
+<div class="line">        .pRxDMAStream = NULL,                    \</div>
+<div class="line">        .TxDMAChannel = 0,                       \</div>
+<div class="line">        .RxDMAChannel = 0,                       \</div>
+<div class="line">        .BusyState = <a class="code hl_define" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>,           \</div>
+<div class="line">        .pTxBuffer = NULL,                       \</div>
+<div class="line">        .pRxBuffer = NULL,                       \</div>
+<div class="line">        .TxSize = 0,                             \</div>
+<div class="line">        .RxSize = 0}</div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a></div><div class="ttdef"><b>Definition</b> uart.h:62</div></div>
+<div class="ttc" id="auart_8h_html_a270dea6e1a92dd83fe58802450bdd60c"><div class="ttname"><a href="#a270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a></div><div class="ttdeci">#define UART_PARITY_NONE</div><div class="ttdef"><b>Definition</b> uart.h:32</div></div>
+<div class="ttc" id="auart_8h_html_a304a79f0a5ea9e9a62d5cda6be625a6a"><div class="ttname"><a href="#a304a79f0a5ea9e9a62d5cda6be625a6a">UART_WORD_LEN_8BIT</a></div><div class="ttdeci">#define UART_WORD_LEN_8BIT</div><div class="ttdef"><b>Definition</b> uart.h:37</div></div>
+<div class="ttc" id="auart_8h_html_a9ed5881f19353f5763f5eefdab167733"><div class="ttname"><a href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a></div><div class="ttdeci">#define UART_STATE_READY</div><div class="ttdef"><b>Definition</b> uart.h:47</div></div>
+<div class="ttc" id="auart_8h_html_ab47c162935901e89322e2ce6700b6744"><div class="ttname"><a href="#ab47c162935901e89322e2ce6700b6744">UART_MODE_TX_RX</a></div><div class="ttdeci">#define UART_MODE_TX_RX</div><div class="ttdef"><b>Definition</b> uart.h:15</div></div>
+<div class="ttc" id="auart_8h_html_ad3d0d8393b15f52c3df1367f4e79b38f"><div class="ttname"><a href="#ad3d0d8393b15f52c3df1367f4e79b38f">UART_STOPBITS_1BIT</a></div><div class="ttdeci">#define UART_STOPBITS_1BIT</div><div class="ttdef"><b>Definition</b> uart.h:41</div></div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="lineno">   77</span><span class="preprocessor">#define UART_HANDLE_STRUCT_DEFAULT(pUSART, baud) \</span></div>
+<div class="line"><span class="lineno">   78</span><span class="preprocessor">    (UART_Handle_t){                             \</span></div>
+<div class="line"><span class="lineno">   79</span><span class="preprocessor">        .Init = {                                \</span></div>
+<div class="line"><span class="lineno">   80</span><span class="preprocessor">            .pUSARTx = (pUSART),                 \</span></div>
+<div class="line"><span class="lineno">   81</span><span class="preprocessor">            .BaudRate = (baud),                  \</span></div>
+<div class="line"><span class="lineno">   82</span><span class="preprocessor">            .WordLen = UART_WORD_LEN_8BIT,       \</span></div>
+<div class="line"><span class="lineno">   83</span><span class="preprocessor">            .ParityConfig = UART_PARITY_NONE,    \</span></div>
+<div class="line"><span class="lineno">   84</span><span class="preprocessor">            .Direction = UART_MODE_TX_RX,        \</span></div>
+<div class="line"><span class="lineno">   85</span><span class="preprocessor">            .StopBits = UART_STOPBITS_1BIT},     \</span></div>
+<div class="line"><span class="lineno">   86</span><span class="preprocessor">        .pTxDMAStream = NULL,                    \</span></div>
+<div class="line"><span class="lineno">   87</span><span class="preprocessor">        .pRxDMAStream = NULL,                    \</span></div>
+<div class="line"><span class="lineno">   88</span><span class="preprocessor">        .TxDMAChannel = 0,                       \</span></div>
+<div class="line"><span class="lineno">   89</span><span class="preprocessor">        .RxDMAChannel = 0,                       \</span></div>
+<div class="line"><span class="lineno">   90</span><span class="preprocessor">        .BusyState = UART_STATE_READY,           \</span></div>
+<div class="line"><span class="lineno">   91</span><span class="preprocessor">        .pTxBuffer = NULL,                       \</span></div>
+<div class="line"><span class="lineno">   92</span><span class="preprocessor">        .pRxBuffer = NULL,                       \</span></div>
+<div class="line"><span class="lineno">   93</span><span class="preprocessor">        .TxSize = 0,                             \</span></div>
+<div class="line"><span class="lineno">   94</span><span class="preprocessor">        .RxSize = 0}</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6cdc4e35cd90d15a964994499475e7d7" name="a6cdc4e35cd90d15a964994499475e7d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cdc4e35cd90d15a964994499475e7d7">&#9670;&#160;</a></span>UART_MODE_RX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_MODE_RX&#160;&#160;&#160;(1U &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad54f095a1073bcd81787d13fc268bd62" name="ad54f095a1073bcd81787d13fc268bd62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54f095a1073bcd81787d13fc268bd62">&#9670;&#160;</a></span>UART_MODE_TX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_MODE_TX&#160;&#160;&#160;(1U &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab47c162935901e89322e2ce6700b6744" name="ab47c162935901e89322e2ce6700b6744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47c162935901e89322e2ce6700b6744">&#9670;&#160;</a></span>UART_MODE_TX_RX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_MODE_TX_RX&#160;&#160;&#160;(<a class="el" href="#ad54f095a1073bcd81787d13fc268bd62">UART_MODE_TX</a> | <a class="el" href="#a6cdc4e35cd90d15a964994499475e7d7">UART_MODE_RX</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a063b14ac42ef9e8f4246c17a586b14eb" name="a063b14ac42ef9e8f4246c17a586b14eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063b14ac42ef9e8f4246c17a586b14eb">&#9670;&#160;</a></span>UART_PARITY_EVEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_PARITY_EVEN&#160;&#160;&#160;(1U &lt;&lt; 10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a270dea6e1a92dd83fe58802450bdd60c" name="a270dea6e1a92dd83fe58802450bdd60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270dea6e1a92dd83fe58802450bdd60c">&#9670;&#160;</a></span>UART_PARITY_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_PARITY_NONE&#160;&#160;&#160;(0U &lt;&lt; 9)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a229615e64964f68f7a856ea6ffea359e" name="a229615e64964f68f7a856ea6ffea359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229615e64964f68f7a856ea6ffea359e">&#9670;&#160;</a></span>UART_PARITY_ODD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_PARITY_ODD&#160;&#160;&#160;((1U &lt;&lt; 10) | (1U &lt;&lt; 9))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2dd365121cd8ac2f21184e3607b1ccf" name="ab2dd365121cd8ac2f21184e3607b1ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2dd365121cd8ac2f21184e3607b1ccf">&#9670;&#160;</a></span>UART_STATE_BUSY_RX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STATE_BUSY_RX&#160;&#160;&#160;2U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>.</p>
+
+</div>
+</div>
+<a id="a53617443361832f9bd51846c7595a81c" name="a53617443361832f9bd51846c7595a81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53617443361832f9bd51846c7595a81c">&#9670;&#160;</a></span>UART_STATE_BUSY_TX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STATE_BUSY_TX&#160;&#160;&#160;1U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
+
+</div>
+</div>
+<a id="a9ed5881f19353f5763f5eefdab167733" name="a9ed5881f19353f5763f5eefdab167733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed5881f19353f5763f5eefdab167733">&#9670;&#160;</a></span>UART_STATE_READY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STATE_READY&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d29/main_8c.html#a7e367d7c7b74485c4c75cdef30ad01e1">DMA2_Stream2_IRQHandler()</a>, <a class="el" href="../../d0/d29/main_8c.html#afc1d00127dcf2fb0afdbc50e4b587fdf">DMA2_Stream7_IRQHandler()</a>, <a class="el" href="#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, <a class="el" href="#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>, and <a class="el" href="#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
+
+</div>
+</div>
+<a id="a7250c88d04ae32707acb2412debee560" name="a7250c88d04ae32707acb2412debee560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7250c88d04ae32707acb2412debee560">&#9670;&#160;</a></span>UART_STOPBITS_0_5BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STOPBITS_0_5BIT&#160;&#160;&#160;(1U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e5bcad4ff9878cb5435ac5e72cd0aa6" name="a3e5bcad4ff9878cb5435ac5e72cd0aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5bcad4ff9878cb5435ac5e72cd0aa6">&#9670;&#160;</a></span>UART_STOPBITS_1_5BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STOPBITS_1_5BIT&#160;&#160;&#160;(3U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3d0d8393b15f52c3df1367f4e79b38f" name="ad3d0d8393b15f52c3df1367f4e79b38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d0d8393b15f52c3df1367f4e79b38f">&#9670;&#160;</a></span>UART_STOPBITS_1BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STOPBITS_1BIT&#160;&#160;&#160;(0U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12bf46fa2ab2c56f383a1f3657acbfc0" name="a12bf46fa2ab2c56f383a1f3657acbfc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12bf46fa2ab2c56f383a1f3657acbfc0">&#9670;&#160;</a></span>UART_STOPBITS_2BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_STOPBITS_2BIT&#160;&#160;&#160;(2U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a304a79f0a5ea9e9a62d5cda6be625a6a" name="a304a79f0a5ea9e9a62d5cda6be625a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304a79f0a5ea9e9a62d5cda6be625a6a">&#9670;&#160;</a></span>UART_WORD_LEN_8BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_WORD_LEN_8BIT&#160;&#160;&#160;(0U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bd369a048b3426052bcd36c7582c3d6" name="a7bd369a048b3426052bcd36c7582c3d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd369a048b3426052bcd36c7582c3d6">&#9670;&#160;</a></span>UART_WORD_LEN_9BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_WORD_LEN_9BIT&#160;&#160;&#160;(1U &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a723ce2798f8cc48b1766319dccef94fe" name="a723ce2798f8cc48b1766319dccef94fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a723ce2798f8cc48b1766319dccef94fe">&#9670;&#160;</a></span>UART_Error_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46" name="a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46"></a>UART_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07" name="a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07"></a>UART_OK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_enumvalue" href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a> = -1,</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_enumvalue" href="#a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07">UART_OK</a> = 0</div>
+<div class="line"><span class="lineno">   10</span>} <a class="code hl_enumeration" href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a>;</div>
+<div class="ttc" id="auart_8h_html_a723ce2798f8cc48b1766319dccef94fe"><div class="ttname"><a href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a></div><div class="ttdeci">UART_Error_t</div><div class="ttdef"><b>Definition</b> uart.h:7</div></div>
+<div class="ttc" id="auart_8h_html_a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07"><div class="ttname"><a href="#a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07">UART_OK</a></div><div class="ttdeci">@ UART_OK</div><div class="ttdef"><b>Definition</b> uart.h:9</div></div>
+<div class="ttc" id="auart_8h_html_a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46"><div class="ttname"><a href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a></div><div class="ttdeci">@ UART_ERROR</div><div class="ttdef"><b>Definition</b> uart.h:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a61a37e10fa9213b30b3b9ea56d4a6a52" name="a61a37e10fa9213b30b3b9ea56d4a6a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a37e10fa9213b30b3b9ea56d4a6a52">&#9670;&#160;</a></span>UART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a723ce2798f8cc48b1766319dccef94fe">UART_Error_t</a> UART_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (pHandle == NULL)</div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a>;</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a> &lt; <a class="code hl_define" href="#af0c44b74f2cd26b50262948d63e808dc">UART_BAUDRATE_1200</a> ||</div>
+<div class="line"><span class="lineno">   20</span>        pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a> &gt; <a class="code hl_define" href="#a4033ae53a1043a74d5d8dd4af5532294">UART_BAUDRATE_1000000</a>)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a>;</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    USART_TypeDef *USARTx = pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">pUSARTx</a>;</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">// 1. Disable UART before config</span></div>
+<div class="line"><span class="lineno">   28</span>    USARTx-&gt;CR1 &amp;= ~USART_CR1_UE;</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// 2. Configure word length + parity + direction</span></div>
+<div class="line"><span class="lineno">   31</span>    USARTx-&gt;CR1 &amp;= ~(USART_CR1_M | USART_CR1_PCE | USART_CR1_PS |</div>
+<div class="line"><span class="lineno">   32</span>                     USART_CR1_TE | USART_CR1_RE);</div>
+<div class="line"><span class="lineno">   33</span>    USARTx-&gt;CR1 |= (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a26e33a8e6411817822d27aa1ea9db653">WordLen</a> |</div>
+<div class="line"><span class="lineno">   34</span>                    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a5b48d2522bb646d7eeefe484455c839e">ParityConfig</a> |</div>
+<div class="line"><span class="lineno">   35</span>                    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a6e9b411d7e4579984cd1c1d4aa10c5a1">Direction</a>);</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// 3. Configure stop bits</span></div>
+<div class="line"><span class="lineno">   38</span>    USARTx-&gt;CR2 &amp;= ~(USART_CR2_STOP);</div>
+<div class="line"><span class="lineno">   39</span>    USARTx-&gt;CR2 |= pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a2475d6df8c5c21a6f311cc8a8bb0088b">StopBits</a>;</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// 4. Configure baud rate using default 16 MHz clock</span></div>
+<div class="line"><span class="lineno">   42</span>    uint32_t periphClk = 16000000UL; <span class="comment">// assuming HSI = 16 MHz</span></div>
+<div class="line"><span class="lineno">   43</span>    uint32_t usartdiv;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> ((USARTx-&gt;CR1 &amp; USART_CR1_OVER8) == 0)</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="comment">// oversampling by 16</span></div>
+<div class="line"><span class="lineno">   48</span>        usartdiv = (periphClk + (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a> / 2U)) /</div>
+<div class="line"><span class="lineno">   49</span>                   pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a>;</div>
+<div class="line"><span class="lineno">   50</span>        USARTx-&gt;BRR = usartdiv;</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="comment">// oversampling by 8</span></div>
+<div class="line"><span class="lineno">   55</span>        usartdiv = (2U * periphClk + (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a> / 2U)) /</div>
+<div class="line"><span class="lineno">   56</span>                   pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">BaudRate</a>;</div>
+<div class="line"><span class="lineno">   57</span>        USARTx-&gt;BRR = (usartdiv &amp; 0xFFF0U) | ((usartdiv &amp; 0x000FU) &gt;&gt; 1U);</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// 5. Enable UART</span></div>
+<div class="line"><span class="lineno">   61</span>    USARTx-&gt;CR1 |= USART_CR1_UE;</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// 6. Initialize handle runtime state</span></div>
+<div class="line"><span class="lineno">   64</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">BusyState</a> = <a class="code hl_define" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>;</div>
+<div class="line"><span class="lineno">   65</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a1f21f6286af303cc623240bd936329df">pTxBuffer</a> = NULL;</div>
+<div class="line"><span class="lineno">   66</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a69e400db8ba80765e0dd15ed84617cea">pRxBuffer</a> = NULL;</div>
+<div class="line"><span class="lineno">   67</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a86cc5ae535b3b2d239b0f9626fb9123e">TxSize</a> = 0;</div>
+<div class="line"><span class="lineno">   68</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01">RxSize</a> = 0;</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="#a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07">UART_OK</a>;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a07f1611a08193c65200fa96b5c41ba85"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">UART_Handle_t::Init</a></div><div class="ttdeci">UART_Init_t Init</div><div class="ttdef"><b>Definition</b> uart.h:63</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a1f21f6286af303cc623240bd936329df"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a1f21f6286af303cc623240bd936329df">UART_Handle_t::pTxBuffer</a></div><div class="ttdeci">uint8_t * pTxBuffer</div><div class="ttdef"><b>Definition</b> uart.h:71</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a4cbe58a987bf8876349dd98007134a45"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">UART_Handle_t::BusyState</a></div><div class="ttdeci">uint32_t BusyState</div><div class="ttdef"><b>Definition</b> uart.h:68</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a69e400db8ba80765e0dd15ed84617cea"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a69e400db8ba80765e0dd15ed84617cea">UART_Handle_t::pRxBuffer</a></div><div class="ttdeci">uint8_t * pRxBuffer</div><div class="ttdef"><b>Definition</b> uart.h:72</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a86cc5ae535b3b2d239b0f9626fb9123e"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a86cc5ae535b3b2d239b0f9626fb9123e">UART_Handle_t::TxSize</a></div><div class="ttdeci">uint32_t TxSize</div><div class="ttdef"><b>Definition</b> uart.h:73</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_af26e16979fe9dfc19b1d16ee2f5a6b01"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01">UART_Handle_t::RxSize</a></div><div class="ttdeci">uint32_t RxSize</div><div class="ttdef"><b>Definition</b> uart.h:74</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a2475d6df8c5c21a6f311cc8a8bb0088b"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a2475d6df8c5c21a6f311cc8a8bb0088b">UART_Init_t::StopBits</a></div><div class="ttdeci">uint32_t StopBits</div><div class="ttdef"><b>Definition</b> uart.h:58</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a26e33a8e6411817822d27aa1ea9db653"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a26e33a8e6411817822d27aa1ea9db653">UART_Init_t::WordLen</a></div><div class="ttdeci">uint32_t WordLen</div><div class="ttdef"><b>Definition</b> uart.h:55</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a3db8675835047c53a18d787d914799a1"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">UART_Init_t::pUSARTx</a></div><div class="ttdeci">USART_TypeDef * pUSARTx</div><div class="ttdef"><b>Definition</b> uart.h:53</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a5b48d2522bb646d7eeefe484455c839e"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a5b48d2522bb646d7eeefe484455c839e">UART_Init_t::ParityConfig</a></div><div class="ttdeci">uint32_t ParityConfig</div><div class="ttdef"><b>Definition</b> uart.h:56</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a6e9b411d7e4579984cd1c1d4aa10c5a1"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a6e9b411d7e4579984cd1c1d4aa10c5a1">UART_Init_t::Direction</a></div><div class="ttdeci">uint32_t Direction</div><div class="ttdef"><b>Definition</b> uart.h:57</div></div>
+<div class="ttc" id="astruct_u_a_r_t___init__t_html_a94cdd98e53e08f524477c6015134128e"><div class="ttname"><a href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">UART_Init_t::BaudRate</a></div><div class="ttdeci">uint32_t BaudRate</div><div class="ttdef"><b>Definition</b> uart.h:54</div></div>
+<div class="ttc" id="auart_8h_html_a4033ae53a1043a74d5d8dd4af5532294"><div class="ttname"><a href="#a4033ae53a1043a74d5d8dd4af5532294">UART_BAUDRATE_1000000</a></div><div class="ttdeci">#define UART_BAUDRATE_1000000</div><div class="ttdef"><b>Definition</b> uart.h:29</div></div>
+<div class="ttc" id="auart_8h_html_af0c44b74f2cd26b50262948d63e808dc"><div class="ttname"><a href="#af0c44b74f2cd26b50262948d63e808dc">UART_BAUDRATE_1200</a></div><div class="ttdeci">#define UART_BAUDRATE_1200</div><div class="ttdef"><b>Definition</b> uart.h:18</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a94cdd98e53e08f524477c6015134128e">UART_Init_t::BaudRate</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">UART_Handle_t::BusyState</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a6e9b411d7e4579984cd1c1d4aa10c5a1">UART_Init_t::Direction</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">UART_Handle_t::Init</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a5b48d2522bb646d7eeefe484455c839e">UART_Init_t::ParityConfig</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a69e400db8ba80765e0dd15ed84617cea">UART_Handle_t::pRxBuffer</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a1f21f6286af303cc623240bd936329df">UART_Handle_t::pTxBuffer</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">UART_Init_t::pUSARTx</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01">UART_Handle_t::RxSize</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a2475d6df8c5c21a6f311cc8a8bb0088b">UART_Init_t::StopBits</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a86cc5ae535b3b2d239b0f9626fb9123e">UART_Handle_t::TxSize</a>, <a class="el" href="#a4033ae53a1043a74d5d8dd4af5532294">UART_BAUDRATE_1000000</a>, <a class="el" href="#af0c44b74f2cd26b50262948d63e808dc">UART_BAUDRATE_1200</a>, <a class="el" href="#a723ce2798f8cc48b1766319dccef94fea8d985e4627498f56f5ab06caa7405b46">UART_ERROR</a>, <a class="el" href="#a723ce2798f8cc48b1766319dccef94fea525187963c0aaa465f2a35b30b894d07">UART_OK</a>, <a class="el" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>, and <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a26e33a8e6411817822d27aa1ea9db653">UART_Init_t::WordLen</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d29/main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="a6164461f2a4ee7fa313aab49e2364198" name="a6164461f2a4ee7fa313aab49e2364198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6164461f2a4ee7fa313aab49e2364198">&#9670;&#160;</a></span>UART_Receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_Receive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a603d71c277d201f0f958dcbf883616eb" name="a603d71c277d201f0f958dcbf883616eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603d71c277d201f0f958dcbf883616eb">&#9670;&#160;</a></span>UART_ReceiveDMA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_ReceiveDMA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  122</span>{</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">BusyState</a> != <a class="code hl_define" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a> || Size == 0 || pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a581a7d200ec4e515b44652a8b1ba0999">pRxDMAStream</a> == NULL)</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <span class="comment">// Mark UART busy</span></div>
+<div class="line"><span class="lineno">  127</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">BusyState</a> = <a class="code hl_define" href="#ab2dd365121cd8ac2f21184e3607b1ccf">UART_STATE_BUSY_RX</a>;</div>
+<div class="line"><span class="lineno">  128</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a69e400db8ba80765e0dd15ed84617cea">pRxBuffer</a> = pData;</div>
+<div class="line"><span class="lineno">  129</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01">RxSize</a> = Size;</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    USART_TypeDef *USARTx = pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">pUSARTx</a>;</div>
+<div class="line"><span class="lineno">  132</span>    DMA_Stream_TypeDef *DMAxStream = pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a581a7d200ec4e515b44652a8b1ba0999">pRxDMAStream</a>;</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// Enable UART DMA RX mode</span></div>
+<div class="line"><span class="lineno">  135</span>    USARTx-&gt;CR3 |= USART_CR3_DMAR;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// Disable DMA before config</span></div>
+<div class="line"><span class="lineno">  138</span>    DMAxStream-&gt;CR &amp;= ~DMA_SxCR_EN;</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">while</span> (DMAxStream-&gt;CR &amp; DMA_SxCR_EN)</div>
+<div class="line"><span class="lineno">  140</span>        ;</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// Peripheral = USART data register, Memory = user buffer</span></div>
+<div class="line"><span class="lineno">  143</span>    DMAxStream-&gt;PAR = (uint32_t)&amp;USARTx-&gt;DR;</div>
+<div class="line"><span class="lineno">  144</span>    DMAxStream-&gt;M0AR = (uint32_t)pData;</div>
+<div class="line"><span class="lineno">  145</span>    DMAxStream-&gt;NDTR = Size;</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>    uint32_t tmp = DMAxStream-&gt;CR;</div>
+<div class="line"><span class="lineno">  148</span>    tmp &amp;= ~(DMA_SxCR_CHSEL | DMA_SxCR_DIR | DMA_SxCR_MINC |</div>
+<div class="line"><span class="lineno">  149</span>             DMA_SxCR_MSIZE | DMA_SxCR_PSIZE | DMA_SxCR_PL);</div>
+<div class="line"><span class="lineno">  150</span>    tmp |= (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#ae9e48107821a2329022eee52a704539b">RxDMAChannel</a> &lt;&lt; DMA_SxCR_CHSEL_Pos) | <span class="comment">// channel</span></div>
+<div class="line"><span class="lineno">  151</span>           (0x0U &lt;&lt; DMA_SxCR_DIR_Pos) |                    <span class="comment">// Peripheral-to-memory</span></div>
+<div class="line"><span class="lineno">  152</span>           DMA_SxCR_MINC |                                 <span class="comment">// increment buffer</span></div>
+<div class="line"><span class="lineno">  153</span>           (0x0U &lt;&lt; DMA_SxCR_MSIZE_Pos) |                  <span class="comment">// 8-bit memory</span></div>
+<div class="line"><span class="lineno">  154</span>           (0x0U &lt;&lt; DMA_SxCR_PSIZE_Pos) |                  <span class="comment">// 8-bit peripheral</span></div>
+<div class="line"><span class="lineno">  155</span>           (0x1U &lt;&lt; DMA_SxCR_PL_Pos);                      <span class="comment">// medium priority</span></div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    DMAxStream-&gt;CR = tmp;</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    DMAxStream-&gt;CR |= DMA_SxCR_TCIE; <span class="comment">// enable transfer complete interrupt</span></div>
+<div class="line"><span class="lineno">  160</span>    DMAxStream-&gt;CR |= DMA_SxCR_EN;   <span class="comment">// enable stream</span></div>
+<div class="line"><span class="lineno">  161</span>}</div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a581a7d200ec4e515b44652a8b1ba0999"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a581a7d200ec4e515b44652a8b1ba0999">UART_Handle_t::pRxDMAStream</a></div><div class="ttdeci">DMA_Stream_TypeDef * pRxDMAStream</div><div class="ttdef"><b>Definition</b> uart.h:65</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_ae9e48107821a2329022eee52a704539b"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#ae9e48107821a2329022eee52a704539b">UART_Handle_t::RxDMAChannel</a></div><div class="ttdeci">uint32_t RxDMAChannel</div><div class="ttdef"><b>Definition</b> uart.h:67</div></div>
+<div class="ttc" id="auart_8h_html_ab2dd365121cd8ac2f21184e3607b1ccf"><div class="ttname"><a href="#ab2dd365121cd8ac2f21184e3607b1ccf">UART_STATE_BUSY_RX</a></div><div class="ttdeci">#define UART_STATE_BUSY_RX</div><div class="ttdef"><b>Definition</b> uart.h:49</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">UART_Handle_t::BusyState</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">UART_Handle_t::Init</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a69e400db8ba80765e0dd15ed84617cea">UART_Handle_t::pRxBuffer</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a581a7d200ec4e515b44652a8b1ba0999">UART_Handle_t::pRxDMAStream</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">UART_Init_t::pUSARTx</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#ae9e48107821a2329022eee52a704539b">UART_Handle_t::RxDMAChannel</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01">UART_Handle_t::RxSize</a>, <a class="el" href="#ab2dd365121cd8ac2f21184e3607b1ccf">UART_STATE_BUSY_RX</a>, and <a class="el" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d29/main_8c.html#a7e367d7c7b74485c4c75cdef30ad01e1">DMA2_Stream2_IRQHandler()</a>, and <a class="el" href="../../d0/d29/main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a id="a030857793764d216571fcc7c0fbc70ee" name="a030857793764d216571fcc7c0fbc70ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030857793764d216571fcc7c0fbc70ee">&#9670;&#160;</a></span>UART_ReceiveIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_ReceiveIT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e1bdbde8cd61461520fdaa2a7f85e1b" name="a4e1bdbde8cd61461520fdaa2a7f85e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1bdbde8cd61461520fdaa2a7f85e1b">&#9670;&#160;</a></span>UART_Transmit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_Transmit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb6786417c75424ac8029d4f521de3cf" name="acb6786417c75424ac8029d4f521de3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6786417c75424ac8029d4f521de3cf">&#9670;&#160;</a></span>UART_TransmitDMA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_TransmitDMA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">BusyState</a> != <a class="code hl_define" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a> || Size == 0 || pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a0245242e553f6106635717751b208e54">pTxDMAStream</a> == NULL)</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// 1. Mark UART as busy</span></div>
+<div class="line"><span class="lineno">   79</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">BusyState</a> = <a class="code hl_define" href="#a53617443361832f9bd51846c7595a81c">UART_STATE_BUSY_TX</a>;</div>
+<div class="line"><span class="lineno">   80</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a1f21f6286af303cc623240bd936329df">pTxBuffer</a> = pData;</div>
+<div class="line"><span class="lineno">   81</span>    pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a86cc5ae535b3b2d239b0f9626fb9123e">TxSize</a> = Size;</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    USART_TypeDef *USARTx = pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">Init</a>.<a class="code hl_variable" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">pUSARTx</a>;</div>
+<div class="line"><span class="lineno">   84</span>    DMA_Stream_TypeDef *DMAxStream = pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a0245242e553f6106635717751b208e54">pTxDMAStream</a>;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">// 2. Enable UART DMA TX mode</span></div>
+<div class="line"><span class="lineno">   87</span>    USARTx-&gt;CR3 |= USART_CR3_DMAT;</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// 3. Disable DMA stream before configuration</span></div>
+<div class="line"><span class="lineno">   90</span>    DMAxStream-&gt;CR &amp;= ~DMA_SxCR_EN;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">while</span> (DMAxStream-&gt;CR &amp; DMA_SxCR_EN)</div>
+<div class="line"><span class="lineno">   92</span>        ; <span class="comment">// wait until fully disabled</span></div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// 4. Configure peripheral and memory addresses</span></div>
+<div class="line"><span class="lineno">   95</span>    DMAxStream-&gt;PAR = (uint32_t)&amp;USARTx-&gt;DR; <span class="comment">// peripheral register</span></div>
+<div class="line"><span class="lineno">   96</span>    DMAxStream-&gt;M0AR = (uint32_t)pData;      <span class="comment">// memory address</span></div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// 5. Set number of data items</span></div>
+<div class="line"><span class="lineno">   99</span>    DMAxStream-&gt;NDTR = Size;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// 6. Configure stream control register (CR)</span></div>
+<div class="line"><span class="lineno">  102</span>    uint32_t tmp = DMAxStream-&gt;CR;</div>
+<div class="line"><span class="lineno">  103</span>    tmp &amp;= ~(DMA_SxCR_CHSEL | DMA_SxCR_DIR | DMA_SxCR_MINC |</div>
+<div class="line"><span class="lineno">  104</span>             DMA_SxCR_MSIZE | DMA_SxCR_PSIZE | DMA_SxCR_PL);</div>
+<div class="line"><span class="lineno">  105</span>    tmp |= (pHandle-&gt;<a class="code hl_variable" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a997017366af8802215555389c690b48e">TxDMAChannel</a> &lt;&lt; DMA_SxCR_CHSEL_Pos) | <span class="comment">// DMA channel</span></div>
+<div class="line"><span class="lineno">  106</span>           (0x1U &lt;&lt; DMA_SxCR_DIR_Pos) |                    <span class="comment">// Memory-to-peripheral</span></div>
+<div class="line"><span class="lineno">  107</span>           DMA_SxCR_MINC |                                 <span class="comment">// Increment memory pointer</span></div>
+<div class="line"><span class="lineno">  108</span>           (0x0U &lt;&lt; DMA_SxCR_MSIZE_Pos) |                  <span class="comment">// Memory size 8-bit</span></div>
+<div class="line"><span class="lineno">  109</span>           (0x0U &lt;&lt; DMA_SxCR_PSIZE_Pos) |                  <span class="comment">// Peripheral size 8-bit</span></div>
+<div class="line"><span class="lineno">  110</span>           (0x1U &lt;&lt; DMA_SxCR_PL_Pos);                      <span class="comment">// Medium priority</span></div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    DMAxStream-&gt;CR = tmp;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// 7. Enable transfer complete interrupt (optional)</span></div>
+<div class="line"><span class="lineno">  115</span>    DMAxStream-&gt;CR |= DMA_SxCR_TCIE;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// 8. Enable DMA stream</span></div>
+<div class="line"><span class="lineno">  118</span>    DMAxStream-&gt;CR |= DMA_SxCR_EN;</div>
+<div class="line"><span class="lineno">  119</span>}</div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a0245242e553f6106635717751b208e54"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a0245242e553f6106635717751b208e54">UART_Handle_t::pTxDMAStream</a></div><div class="ttdeci">DMA_Stream_TypeDef * pTxDMAStream</div><div class="ttdef"><b>Definition</b> uart.h:64</div></div>
+<div class="ttc" id="astruct_u_a_r_t___handle__t_html_a997017366af8802215555389c690b48e"><div class="ttname"><a href="../../d2/d81/struct_u_a_r_t___handle__t.html#a997017366af8802215555389c690b48e">UART_Handle_t::TxDMAChannel</a></div><div class="ttdeci">uint32_t TxDMAChannel</div><div class="ttdef"><b>Definition</b> uart.h:66</div></div>
+<div class="ttc" id="auart_8h_html_a53617443361832f9bd51846c7595a81c"><div class="ttname"><a href="#a53617443361832f9bd51846c7595a81c">UART_STATE_BUSY_TX</a></div><div class="ttdeci">#define UART_STATE_BUSY_TX</div><div class="ttdef"><b>Definition</b> uart.h:48</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a4cbe58a987bf8876349dd98007134a45">UART_Handle_t::BusyState</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a07f1611a08193c65200fa96b5c41ba85">UART_Handle_t::Init</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a1f21f6286af303cc623240bd936329df">UART_Handle_t::pTxBuffer</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a0245242e553f6106635717751b208e54">UART_Handle_t::pTxDMAStream</a>, <a class="el" href="../../d1/dab/struct_u_a_r_t___init__t.html#a3db8675835047c53a18d787d914799a1">UART_Init_t::pUSARTx</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a997017366af8802215555389c690b48e">UART_Handle_t::TxDMAChannel</a>, <a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html#a86cc5ae535b3b2d239b0f9626fb9123e">UART_Handle_t::TxSize</a>, <a class="el" href="#a53617443361832f9bd51846c7595a81c">UART_STATE_BUSY_TX</a>, and <a class="el" href="#a9ed5881f19353f5763f5eefdab167733">UART_STATE_READY</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d29/main_8c.html#a7e367d7c7b74485c4c75cdef30ad01e1">DMA2_Stream2_IRQHandler()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab716d8fc02dc2e22e4b99f4893e2b732" name="ab716d8fc02dc2e22e4b99f4893e2b732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab716d8fc02dc2e22e4b99f4893e2b732">&#9670;&#160;</a></span>UART_TransmitIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_TransmitIT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d81/struct_u_a_r_t___handle__t.html">UART_Handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>pHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="../../dir_db55e7f52dea74dd8d63a0db8842dbf5.html">peripherals</a></li><li class="navelem"><a href="../../d2/d86/uart_8h.html">uart.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

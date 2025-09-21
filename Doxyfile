@@ -1,0 +1,82 @@
+# Doxyfile for Mars Rover Firmware
+
+# Project info
+PROJECT_NAME           = "Mongol Tori 2.0"
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+
+# Input files
+INPUT                  = inc src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.c *.cpp
+
+# Exclude build files if any
+EXCLUDE_PATTERNS       = */build/*
+EXCLUDE                = src/system_stm32f4xx.c src/sysmem.c src/syscalls.c src/startup.c
+
+# Source code extraction
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+# Documentation format
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_LATEX         = NO
+LATEX_OUTPUT           = latex
+
+# Use Doxygen Awesome Theme
+HTML_EXTRA_STYLESHEET  = docs/theme/doxygen-awesome-css/doxygen-awesome.css \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
+						 docs\theme\doxygen-awesome-css\doxygen-custom\custom-alternative.css \
+						 docs\theme\doxygen-awesome-css\doxygen-custom\custom.css
+
+HTML_EXTRA_FILES       = docs/theme/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-interactive-toc.js \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-tabs.js \
+                         docs/theme/doxygen-awesome-css/doxygen-awesome-paragraph-link.js \
+						 docs\theme\doxygen-awesome-css\doxygen-custom\toggle-alternative-theme.js
+
+HTML_HEADER            = docs\theme\doxygen-awesome-css\doxygen-custom\header.html
+
+# Index and navigation
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = .
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+SEARCHENGINE           = YES
+
+# Color style (AUTO allows dark mode toggle)
+FULL_SIDEBAR           = NO
+HTML_COLORSTYLE        = LIGHT
+# Diagrams (requires Graphviz)
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+
+# Input filtering
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+
+# Project grouping
+GENERATE_GROUPS        = YES
+GROUP_GRAPHS           = YES
+
+# Misc
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+QUIET                  = NO

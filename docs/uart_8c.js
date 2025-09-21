@@ -1,7 +1,0 @@
-var uart_8c =
-[
-    [ "UART_Init", "uart_8c.html#a61a37e10fa9213b30b3b9ea56d4a6a52", null ],
-    [ "UART_ReceiveDMA", "uart_8c.html#a603d71c277d201f0f958dcbf883616eb", null ],
-    [ "UART_TransmitDMA", "uart_8c.html#acb6786417c75424ac8029d4f521de3cf", null ],
-    [ "SystemCoreClock", "uart_8c.html#aa3cd3e43291e81e795d642b79b6088e6", null ]
-];
