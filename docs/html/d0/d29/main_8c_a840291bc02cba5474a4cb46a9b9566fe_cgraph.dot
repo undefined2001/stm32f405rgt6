@@ -9,7 +9,7 @@ digraph "main"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="UART1_GPIO_Init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d29/main_8c.html#a80c5daca6a68151c1ae2e64e8dc57f22",tooltip="Initialize GPIO pins for USART1."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="UART_Init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d87/uart_8c.html#a61a37e10fa9213b30b3b9ea56d4a6a52",tooltip=" "];
+  Node3 [id="Node000003",label="UART_Init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d87/uart_8c.html#a61a37e10fa9213b30b3b9ea56d4a6a52",tooltip="Initialize UART peripheral with given handle."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="UART_ReceiveDMA",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d87/uart_8c.html#a603d71c277d201f0f958dcbf883616eb",tooltip=" "];
+  Node4 [id="Node000004",label="UART_ReceiveDMA",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d87/uart_8c.html#a603d71c277d201f0f958dcbf883616eb",tooltip="Receive data via UART using DMA."];
 }

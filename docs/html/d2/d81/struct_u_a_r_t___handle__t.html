@@ -125,6 +125,9 @@ $(function(){initNavTree('d2/d81/struct_u_a_r_t___handle__t.html','../../',''); 
 </div><!--header-->
 <div class="contents">
 
+<p>UART handle structure including DMA and buffers.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d2/d86/uart_8h_source.html">uart.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for UART_Handle_t:</div>
@@ -145,7 +148,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a86cc5ae535b3b2d239b0f9626fb9123e" id="r_a86cc5ae535b3b2d239b0f9626fb9123e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86cc5ae535b3b2d239b0f9626fb9123e">TxSize</a></td></tr>
 <tr class="memitem:af26e16979fe9dfc19b1d16ee2f5a6b01" id="r_af26e16979fe9dfc19b1d16ee2f5a6b01"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af26e16979fe9dfc19b1d16ee2f5a6b01">RxSize</a></td></tr>
 </table>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>UART handle structure including DMA and buffers. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a4cbe58a987bf8876349dd98007134a45" name="a4cbe58a987bf8876349dd98007134a45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cbe58a987bf8876349dd98007134a45">&#9670;&#160;</a></span>BusyState</h2>
 
@@ -157,6 +162,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>UART current state </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 
@@ -173,6 +179,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>UART configuration </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 
@@ -189,6 +196,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to RX buffer </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>.</p>
 
@@ -205,6 +213,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>DMA stream for RX </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>.</p>
 
@@ -221,6 +230,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to TX buffer </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 
@@ -237,6 +247,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>DMA stream for TX </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 
@@ -253,6 +264,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>DMA channel for RX </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>.</p>
 
@@ -269,6 +281,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>RX buffer size </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#a603d71c277d201f0f958dcbf883616eb">UART_ReceiveDMA()</a>.</p>
 
@@ -285,6 +298,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>DMA channel for TX </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 
@@ -301,6 +315,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TX buffer size </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d86/uart_8h.html#a61a37e10fa9213b30b3b9ea56d4a6a52">UART_Init()</a>, and <a class="el" href="../../d2/d86/uart_8h.html#acb6786417c75424ac8029d4f521de3cf">UART_TransmitDMA()</a>.</p>
 

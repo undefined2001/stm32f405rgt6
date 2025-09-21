@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['stopbits_0',['StopBits',['../d1/dab/struct_u_a_r_t___init__t.html#a2475d6df8c5c21a6f311cc8a8bb0088b',1,'UART_Init_t']]],
-  ['systemcoreclock_1',['SystemCoreClock',['../d1/d87/uart_8c.html#aa3cd3e43291e81e795d642b79b6088e6',1,'uart.c']]]
+  ['rates_0',['UART Baud Rates',['../d7/dc9/group___u_a_r_t___baud_rates.html',1,'']]],
+  ['rxdmachannel_1',['RxDMAChannel',['../d2/d81/struct_u_a_r_t___handle__t.html#ae9e48107821a2329022eee52a704539b',1,'UART_Handle_t']]],
+  ['rxsize_2',['RxSize',['../d2/d81/struct_u_a_r_t___handle__t.html#af26e16979fe9dfc19b1d16ee2f5a6b01',1,'UART_Handle_t']]]
 ];

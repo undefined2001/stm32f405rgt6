@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['definitions_0',['Definitions',['../d8/dd2/group___g_p_i_o___modes.html',1,'GPIO Mode Definitions'],['../d9/dcb/group___g_p_i_o___pins.html',1,'GPIO Pin Definitions']]]
+  ['baud_20rates_0',['UART Baud Rates',['../d7/dc9/group___u_a_r_t___baud_rates.html',1,'']]],
+  ['bits_1',['UART Stop Bits',['../dd/d0a/group___u_a_r_t___stop_bits.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_20definitions_0',['GPIO Pin Definitions',['../d9/dcb/group___g_p_i_o___pins.html',1,'']]]
+  ['length_0',['UART Word Length',['../d3/d31/group___u_a_r_t___word_length.html',1,'']]]
 ];
