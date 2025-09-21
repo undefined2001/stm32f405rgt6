@@ -11,7 +11,7 @@ INPUT                  = inc src
 RECURSIVE              = YES
 FILE_PATTERNS          = *.h *.c *.cpp
 
-# Exclude build files if any
+# Exclude build/system files
 EXCLUDE_PATTERNS       = */build/*
 EXCLUDE                = src/system_stm32f4xx.c src/sysmem.c src/syscalls.c src/startup.c
 
@@ -29,23 +29,22 @@ GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
 GENERATE_LATEX         = NO
-LATEX_OUTPUT           = latex
 
-# Use Doxygen Awesome Theme
+# Use Doxygen Awesome Theme (sidebar-only layout)
 HTML_EXTRA_STYLESHEET  = docs/theme/doxygen-awesome-css/doxygen-awesome.css \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
-						 docs\theme\doxygen-awesome-css\doxygen-custom\custom-alternative.css \
-						 docs\theme\doxygen-awesome-css\doxygen-custom\custom.css
+                         docs/theme/doxygen-awesome-css/doxygen-custom/custom.css
 
 HTML_EXTRA_FILES       = docs/theme/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-interactive-toc.js \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-tabs.js \
                          docs/theme/doxygen-awesome-css/doxygen-awesome-paragraph-link.js \
-						 docs\theme\doxygen-awesome-css\doxygen-custom\toggle-alternative-theme.js
+                         docs/theme/doxygen-awesome-css/doxygen-custom/toggle-alternative-theme.js
 
-HTML_HEADER            = docs\theme\doxygen-awesome-css\doxygen-custom\header.html
+# Custom header (for dark/light toggle button)
+HTML_HEADER            = docs/theme/doxygen-awesome-css/doxygen-custom/header.html
 
 # Index and navigation
 FULL_PATH_NAMES        = NO
@@ -60,6 +59,7 @@ SEARCHENGINE           = YES
 # Color style (AUTO allows dark mode toggle)
 FULL_SIDEBAR           = NO
 HTML_COLORSTYLE        = LIGHT
+
 # Diagrams (requires Graphviz)
 HAVE_DOT               = YES
 DOT_IMAGE_FORMAT       = svg
