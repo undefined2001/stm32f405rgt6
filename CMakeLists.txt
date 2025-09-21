@@ -16,6 +16,7 @@ file(GLOB_RECURSE SOURCES
     ${CMAKE_SOURCE_DIR}/src/*.cc
     ${CMAKE_SOURCE_DIR}/src/*.s
     ${CMAKE_SOURCE_DIR}/src/*.S
+    ${CMAKE_SOURCE_DIR}/drivers/src/*.c
 )
 
 #adding startup file to the SOURCES variable
@@ -28,7 +29,7 @@ add_executable(${TARGET}.elf ${SOURCES})
 target_include_directories(${TARGET}.elf PUBLIC 
     "C:/cmsis/STM32F4xx/inc"
     "C:/cmsis/ARM/inc"
-    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/drivers/inc
 )
 
 target_compile_definitions(${TARGET}.elf PUBLIC STM32F405xx)

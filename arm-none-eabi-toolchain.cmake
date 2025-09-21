@@ -21,7 +21,7 @@ endif()
 
 
 # Flags for Cortex-M4
-set(CMAKE_C_FLAGS "-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -Wall -nostdlib -g -ffunction-sections -fdata-sections")
+set(CMAKE_C_FLAGS "-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -Wall -g -ffunction-sections -fdata-sections")
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -fno-rtti -fno-exceptions -fno-tree-loop-distribution")
 
 
